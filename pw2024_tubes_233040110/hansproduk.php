@@ -88,7 +88,6 @@ if (isset($_POST["search"])) {
         <p><?php echo $row['deskripsi']; ?></p>
         <p><strong>Harga:</strong> <span class="harga"><?php echo $row['harga']; ?></span></p>
         <p><strong>Stok:</strong> <?php echo $row['stok']; ?></p>
-        <!-- Tombol Order -->
         <button onclick="order(<?php echo $row['produk_id']; ?>)" <?php if ($row['stok'] == 0) echo 'disabled'; ?>>Order</button>
     </div>
 <?php } ?>
@@ -108,8 +107,7 @@ if (isset($_POST["search"])) {
     }
 
     function order(produk_id) {
-        alert("Terima Kasih Anda Telah Membeli Produk dengan ID " + produk_id);
-        // Tambahkan logika untuk pesanan di sini, misalnya, pengiriman data ke server.
+        alert("Terima Kasih Anda Telah Membeli Produk dengan ID " + produk_id)
     }
 </script>
 
