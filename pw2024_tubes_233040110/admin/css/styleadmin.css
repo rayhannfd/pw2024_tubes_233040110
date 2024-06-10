@@ -1,0 +1,17 @@
+.containerproduct h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.containerproduct table {
+    margin-left: 50px;
+}
+
+.containerproduct tbody img {
+    width: 50px;
+ }
+ 
+ .buttontambah {
+    margin-left: 94vh;
+    
+ }
